@@ -1,16 +1,21 @@
 // Connection with pokeApi
+const btnSearch = document.getElementById("btnSearch");
 
 const getPokemons = async () => {
+  let search = document.getElementById("search").value;
   try {
     const section = "pokemon";
-    const res = await fetch(`https://pokeapi.co/api/v2/${section}`);
+    const res = await fetch(
+      `https://pokeapi.co/api/v2/${section}/?offset=0&limit=151`
+    );
     const data = await res.json();
     const singleElements = data.results.map((poke) => poke);
     // console.log(singleElements);
-    document.getElementById("root").innerHTML = singleElements[0].name
+    const pokeName = singleElements[search].name;
+    document.getElementById("root").innerHTML = pokeName;
   } catch (error) {
     console.log(error);
   }
 };
 
-getPokemons();
+btnSearch.addEventListener("click", getPokemons);
