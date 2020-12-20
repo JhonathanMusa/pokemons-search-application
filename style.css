@@ -47,6 +47,33 @@ button {
   cursor: pointer;
 }
 
-button:hover{
-    background-color: rgb(204, 133, 40);
+button:hover {
+  background-color: rgb(204, 133, 40);
 }
+
+a {
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+  margin: auto;
+}
+a:hover {
+  color: #f00;
+}
+
+/* ========= POKE LIST ========== */
+.grid-container {
+  display: grid;
+  grid-template-rows: 50px;
+  grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-auto-rows: 50px;
+}
+
+.grid-container .grid-item{
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin: 3px;
+}
+
+

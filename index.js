@@ -10,7 +10,6 @@ const getPokemons = async () => {
     );
     const data = await res.json();
     const singleElements = data.results.map((poke) => poke);
-    // console.log(singleElements);
     const pokeName = singleElements[search].name;
     document.getElementById("root").innerHTML = pokeName;
   } catch (error) {
@@ -19,3 +18,4 @@ const getPokemons = async () => {
 };
 
 btnSearch.addEventListener("click", getPokemons);
+
