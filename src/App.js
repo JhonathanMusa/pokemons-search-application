@@ -4,7 +4,7 @@ import store from "./redux/store";
 import SearchPokemon from "./components/SearchPokemon";
 import ResultPokemon from "./components/ResultPokemon";
 
-function App() {
+const App = () => {
   return (
     <Provider store={store}>
       <div className="App container">
