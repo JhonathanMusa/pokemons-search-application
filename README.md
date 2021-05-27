@@ -1,2 +1,2 @@
 # pokemons-search-application
-Search pokemons application built with React and Redux
+Search pokemon application built with React and Redux
