@@ -1,0 +1,40 @@
+.searchContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.searchBox {
+  position: relative;
+}
+
+.input_search {
+  font-size: 1rem;
+  height: 30px;
+  border-radius: 5px;
+  padding: 5px 30px 5px 10px;
+  border: 1px solid #000;
+}
+
+.btn_search {
+  position: absolute;
+  background: none;
+  border: none;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+.resultContainer h3 {
+  text-align: center;
+}
+
+.resultBody {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.btn_search:focus,
+.input_search:focus {
+  outline: none;
+}

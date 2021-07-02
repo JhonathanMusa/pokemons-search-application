@@ -7,18 +7,14 @@ import ResultPokemon from "./components/ResultPokemon";
 const App = () => {
   return (
     <Provider store={store}>
-      <div className="App container">
-        <div className="row">
-          <div className="col-12 mt-4 border-top pt-3">
-            <SearchPokemon />
-          </div>
-          <div className="col-12">
-            <ResultPokemon />
-          </div>
-        </div>
+      <div>
+        <SearchPokemon />
+      </div> 
+      <div>
+        <ResultPokemon />
       </div>
     </Provider>
   );
-}
+};
 
 export default App;
