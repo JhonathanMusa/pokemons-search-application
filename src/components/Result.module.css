@@ -38,3 +38,8 @@
 .input_search:focus {
   outline: none;
 }
+
+
+.loading{
+  text-align: center;
+}

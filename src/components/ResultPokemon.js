@@ -8,7 +8,7 @@ const ResultPokemon = () => {
   return (
     <div className={style.resultContainer}>
       <h3>Resultado: </h3>
-      {search.loading && <div>Buscando...</div>}
+      {search.loading && <div className={style.loading}>Buscando...</div>}
       {search.pokemon.length >= 1 && (
         <div className={style.resultBody}>
           <img src={search.pokemon[0].sprites.front_default} alt="Pokemon" />
