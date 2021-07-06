@@ -12,11 +12,18 @@ body {
 }
 
 
-
-
 .text-success {
   font-size: 1.5rem;
   color: green;
   font-weight: bold;
-  
+}
+
+p{
+  font-size: 0.9rem;
+}
+
+.pokedex_container{
+  width: 300px;
+  height: auto;
+  margin: auto;
 }

@@ -30,6 +30,7 @@ const fetch_pokemon = (value) => {
     dispatch(fetchPokemonRequest());
     Axios.get(`https://pokeapi.co/api/v2/pokemon/${value}`)
       .then((response) => {
+        console.log(response.data);
         dispatch(fetchPokemonSuccess([response.data]));
       })
       .catch((error) => {

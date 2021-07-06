@@ -7,11 +7,9 @@ import ResultPokemon from "./components/ResultPokemon";
 const App = () => {
   return (
     <Provider store={store}>
-      <div>
-        <SearchPokemon />
-      </div> 
-      <div>
+      <div className="pokedex_container">
         <ResultPokemon />
+        <SearchPokemon />
       </div>
     </Provider>
   );
