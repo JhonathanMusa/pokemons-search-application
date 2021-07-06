@@ -20,7 +20,7 @@ const SearchPokemon = () => {
           <label htmlFor="search_pokemon"></label>
           <input
             type="text"
-            placeholder="Search..."
+            placeholder="Search Pokemon..."
             className={style.input_search}
             id="search_pokemon"
             value={pokemonName}

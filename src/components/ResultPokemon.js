@@ -10,26 +10,31 @@ const ResultPokemon = () => {
       {search.loading && <div className={style.loading}>Buscando...</div>}
       {search.pokemon.length >= 1 && (
         <div className={style.result}>
-          <p>{search.pokemon[0].name}</p>
+          <strong>
+            <p>{search.pokemon[0].name}</p>
+          </strong>
           <div className={style.card_head}>
             <img src={search.pokemon[0].sprites.front_default} alt="Pokemon" />
           </div>
           <div>
             <p>
-              <strong>HP:</strong> {search.pokemon[0].stats[0].base_stat}
+              <strong>HP: </strong>
+              {search.pokemon[0].stats[0].base_stat}
             </p>
             <p>
-              <strong>Attack:</strong> {search.pokemon[0].stats[1].base_stat}
+              <strong>Attack: </strong>
+              {search.pokemon[0].stats[1].base_stat}
             </p>
             <p>
-              <strong>Defense:</strong> {search.pokemon[0].stats[2].base_stat}
+              <strong>Defense: </strong>
+              {search.pokemon[0].stats[2].base_stat}
             </p>
             <p>
-              <strong>Special Attack:</strong>{" "}
+              <strong>Special Attack: </strong>
               {search.pokemon[0].stats[3].base_stat}
             </p>
             <p>
-              <strong>Special Defense:</strong>{" "}
+              <strong>Special Defense: </strong>
               {search.pokemon[0].stats[4].base_stat}
             </p>
           </div>
