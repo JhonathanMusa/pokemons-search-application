@@ -12,7 +12,8 @@
   height: 30px;
   border-radius: 5px;
   padding: 5px 30px 5px 10px;
-  border: 1px solid #000;
+  border: none;
+  /* border: 1px solid #000; */
 }
 
 .btn_search {
@@ -40,11 +41,10 @@
   outline: none;
 }
 
-
-.loading{
+.loading {
   text-align: center;
 }
 
-.card_head{
+.card_head {
   text-align: center;
 }

@@ -1,4 +1,3 @@
-import React from "react";
 import { useSelector } from "react-redux";
 import style from "./Result.module.css";
 
@@ -14,7 +13,7 @@ const ResultPokemon = () => {
             <p>{search.pokemon[0].name}</p>
           </strong>
           <div className={style.card_head}>
-            <img src={search.pokemon[0].sprites.front_default} alt="Pokemon" />
+            <img src={search.pokemon[0].sprites.front_default} alt="" />
           </div>
           <div>
             <p>
